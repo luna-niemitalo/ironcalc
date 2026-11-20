@@ -23,8 +23,9 @@ speed, structural edits; built to WASM and published through lilith_ui_vue's exp
 
 - `upstream` = github.com/ironcalc/IronCalc, **fetch only** (push URL disabled on purpose).
   Local `main` mirrors `upstream/main`; `master` is ours, rebased onto it.
-- `origin` = Luna's own repository (URL from Luna; not set yet). Luna pushes; Claude never
-  pushes (global rule).
+- `origin` = `git@github.com:luna-niemitalo/ironcalc.git` (Luna's). Luna pushes; Claude
+  never pushes (global rule). After a rebase onto upstream, the push needs
+  `--force-with-lease`.
 - Policy (Luna, 2026-11-20): stay rebasable by default (DESIGN.md "Upstream").
 
 ## Boundaries
