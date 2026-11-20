@@ -5,3 +5,10 @@ bindings/python/docs/_static/logo-light.svg
 bindings/python/docs/_static/logo-dark.svg
 .DS_Store
 webapp/IronCalc/tests/example.ic
+
+# lilith fork (appended block, kept last so upstream edits above merge cleanly)
+.direnv/
+# Claude Code local state, which can hold secrets; never committed (~/.claude/rules/git-no-claude-dir.md).
+.claude/
+# update-flakes.nu leaves flake.lock.bak beside each flake.lock it bumps.
+*.bak
